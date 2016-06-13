@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+ul {
+    background: #3399ff;
+    padding: 20px;
+}
+
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
+
+h1 { 
+    display: block;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+</style>
+	
+  </head>
+	<body>
+	  <center><h1>Album</h1></center>
+	   <ul class="list-group">
+           {% for photo in variables.photos %}
+	    <li class="list-group-item">
+             <img src="{{ photo }}" class="img-thumbnail" height="500" /></br>
+            </li>
+	   {% endfor %}
+           </ul>
+	</body>
+</html>
